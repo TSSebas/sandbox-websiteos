@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="WebsiteOS Sandbox — automatisch generierte Testseite für Deployment-Pipeline-Verifikation.">
+  <meta name="generator" content="WebsiteOS W5 Sandbox-Deploy">
+  <title>WebsiteOS Sandbox — Deploy OK</title>
+  <link rel="canonical" href="https://sandbox-websiteos.sbcdn.de/">
+  <meta property="og:title" content="WebsiteOS Sandbox">
+  <meta property="og:description" content="Sandbox deployment verification page">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://sandbox-websiteos.sbcdn.de/">
+  <style>
+    :root { color-scheme: light dark; --bg: #0b0d12; --fg: #e6e9ef; --accent: #4f7cff; --ok: #2ecc71; }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; min-height: 100%; background: var(--bg); color: var(--fg); font: 16px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+    main { max-width: 780px; margin: 0 auto; padding: 6vh 6vw; }
+    h1 { font-size: clamp(2rem, 5vw, 3.25rem); margin: 0 0 .5em; letter-spacing: -.02em; }
+    .pill { display: inline-block; padding: .25em .75em; border-radius: 999px; background: rgba(46,204,113,.15); color: var(--ok); font-size: .85rem; font-weight: 600; margin-bottom: 1em; }
+    p { color: rgba(230,233,239,.78); margin: .8em 0; font-size: 1.05rem; }
+    code { background: rgba(255,255,255,.07); padding: .15em .4em; border-radius: .25em; font-size: .92em; font-family: "SF Mono", Monaco, Consolas, monospace; }
+    .meta { margin-top: 3em; padding-top: 1.5em; border-top: 1px solid rgba(255,255,255,.08); display: grid; grid-template-columns: max-content 1fr; gap: .5em 1.5em; font-size: .9rem; color: rgba(230,233,239,.55); }
+    .meta dt { font-weight: 600; color: rgba(230,233,239,.8); }
+    a { color: var(--accent); }
+  </style>
+</head>
+<body>
+  <main>
+    <span class="pill">● Live</span>
+    <h1>WebsiteOS Sandbox<br>Deployment OK</h1>
+    <p>Diese Seite wurde durch den <strong>WebsiteOS W5 Real-Deploy-Pipeline</strong> automatisch deployed. Wenn du das hier liest, funktioniert die komplette Kette: Provider-Adapter → Pages-Project → Custom-Domain (CNAME auf <code>sbcdn.de</code>-Zone) → SSL via Google CA → Edge-Auslieferung.</p>
+    <p>Nutze diese Subdomain für Audits durch <code>Lighthouse / A11y / SEO / Security / Brand-Coherence</code>-Agents (W5-T10..T14) und für Failover-Drills (W5-T16 Suite F bei <code>TEST_REAL_NETWORK=1</code>).</p>
+    <dl class="meta">
+      <dt>Provider</dt>     <dd>Cloudflare Pages</dd>
+      <dt>Project</dt>      <dd>sandbox-websiteos</dd>
+      <dt>Origin URL</dt>   <dd><a href="https://sandbox-websiteos.pages.dev/">sandbox-websiteos.pages.dev</a></dd>
+      <dt>Custom Domain</dt><dd>sandbox-websiteos.sbcdn.de</dd>
+      <dt>Build</dt>        <dd>WebsiteOS W5 Initial Sanity Check</dd>
+    </dl>
+  </main>
+</body>
+</html>
